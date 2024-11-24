@@ -1,0 +1,79 @@
+# Projeto de Previsão de Acidentes
+
+Este projeto utiliza várias bibliotecas de Python para análise de dados, visualização e machine learning. O objetivo principal é analisar dados de acidentes, detectar anomalias, prever ocorrências futuras e visualizar os resultados.
+
+## Requisitos
+
+- Python 3.6 ou superior
+- pip (gerenciador de pacotes do Python)
+
+## Configuração do Ambiente
+
+1. Clone o repositório para sua máquina local:
+
+   ```sh
+   git clone https://github.com/seu-usuario/seu-repositorio.git
+   cd seu-repositorio
+   ```
+
+2. Crie um ambiente virtual:
+
+   ```sh
+   python3 -m venv myenv
+   ```
+
+3. Ative o ambiente virtual:
+
+   - No macOS/Linux:
+     ```sh
+     source myenv/bin/activate
+     ```
+   - No Windows:
+     ```sh
+     myenv\Scripts\activate
+     ```
+
+4. Instale as dependências:
+   ```sh
+   pip install -r requirements.txt
+   ```
+
+## Executando o Projeto
+
+1. Prepare os dados:
+
+   - Coloque os arquivos JSON (`2022.json`, [2023.json], [2024.json]) na pasta do projeto.
+   - Execute o script [preparacao_dados.py] para carregar, limpar e preparar os dados:
+     ```sh
+     python preparacao_dados.py
+     ```
+
+2. Analise os dados:
+
+   - Execute o script [analise_dados.py] para realizar a análise exploratória dos dados:
+     ```sh
+     python analise_dados.py
+     ```
+
+3. Preveja acidentes e detecte anomalias:
+   - Execute o script [previsao_acidentes.py] para realizar a modelagem, previsão e detecção de anomalias:
+     ```sh
+     python previsao_acidentes.py
+     ```
+
+## Estrutura do Projeto
+
+- [preparacao_dados.py]: Script para carregar, limpar e preparar os dados.
+- [analise_dados.py]: Script para realizar a análise exploratória dos dados.
+- [previsao_acidentes.py]: Script para modelagem, previsão e detecção de anomalias.
+- [requirements.txt]: Arquivo com as dependências do projeto.
+
+## Dependências
+
+As principais bibliotecas utilizadas no projeto são:
+
+- pandas
+- numpy
+- plotly
+- scikit-learn
+- prophet
